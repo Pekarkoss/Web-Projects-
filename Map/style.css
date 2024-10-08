@@ -1,0 +1,159 @@
+/* Genel Ayarlar */
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #eef2f3; /* Daha açık bir arka plan rengi */
+}
+
+/* Header ve Navbar */
+header {
+  background-color: #0056b3; /* Koyu mavi */
+  color: white;
+  padding: 20px 0;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center; /* Ortalamak için değiştirildi */
+  align-items: center;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  margin-right: 20px; /* Logodan sonraki boşluk */
+}
+
+.logo {
+  height: 50px;
+  width: auto;
+  margin-right: 10px;
+}
+
+h1 {
+  font-size: 24px;
+  margin: 0;
+}
+
+.navbar {
+  display: flex;
+  gap: 15px;
+  align-items: center; /* Dikey ortalamak için */
+}
+
+/* Genel Buton Stili */
+.btn {
+  background-color: #28a745; /* Yeşil */
+  font-size: 16px;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+  position: relative;
+  margin: 2px;
+  display: flex; /* İçeriği ortalamak için */
+  align-items: center; /* Dikey olarak ortala */
+  justify-content: center; /* Yatay olarak ortala */
+}
+
+.btn:hover {
+  background-color: #218838; /* Daha koyu yeşil */
+}
+
+/* Buton Renkleri */
+.btn-info {
+  background-color: #17a2b8; /* Mavi-yeşil */
+}
+
+.btn-info:hover {
+  background-color: #138496; /* Daha koyu mavi-yeşil */
+}
+
+.btn-warning {
+  background-color: #ffc107; /* Sarı */
+}
+
+.btn-warning:hover {
+  background-color: #e0a800; /* Daha koyu sarı */
+}
+
+.btn-danger {
+  background-color: #dc3545; /* Kırmızı */
+}
+
+.btn-danger:hover {
+  background-color: #c82333; /* Daha koyu kırmızı */
+}
+
+/* Harita */
+.map {
+  width: 100%;
+  height: 650px;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+}
+
+/* Panel */
+.panel {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background-color: #ffffff; /* Beyaz arka plan */
+  border: 1px solid #dee2e6; /* Açık gri sınır */
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  display: none;
+  width: 300px;
+}
+
+/* DataTable */
+.data-table-wrapper {
+  margin-top: 20px;
+}
+
+.data-table-wrapper table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.data-table-wrapper th,
+.data-table-wrapper td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: left;
+}
+
+.data-table-wrapper th {
+  background-color: #0056b3; /* Koyu mavi */
+  color: white;
+}
+
+/* Popup Stili */
+.popup {
+  display: none;
+  position: absolute;
+  background-color: #ffffff;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  z-index: 100;
+  width: 300px; /* Popup genişliği */
+  word-wrap: break-word; /* Kelime kırma */
+}
+
+/* SweetAlert2 Custom Styles */
+.swal2-custom-popup {
+  background-color: #f4f4f4; /* Hafif gri arka plan */
+  border-radius: 10px; /* Yuvarlatılmış köşeler */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Gölge efekti */
+  padding: 20px; /* İç kenar boşluğu */
+  width: 600px; /* Popup genişliği */
+  max-width: 90%; /* Ekran genişliğinin %90'ını geçmesin */
+}
