@@ -1,0 +1,40 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+    @model List<Course>
+}
+
+@section header {
+    @await Html.PartialAsync("_Header");
+}
+
+
+
+<div class="row">
+    @if (Model != null && Model.Any())
+    {
+        @foreach (var kurs in Model)
+        {
+            <div class="col-3">
+                <div class="card">
+                    @if (!string.IsNullOrEmpty(kurs?.Image))
+                    {
+                        <img src="~/img/@kurs.Image" alt="Course Image">
+                    }
+                    else
+                    {
+                        <img src="~/img/default-image.jpg" alt="Default Image">
+                    }
+
+                    <div class="card-body">
+                        <h5 class="card-title">@kurs?.Title ?? "No Title"</h5>
+                        <p class="card-text">@kurs?.Description ?? "No Description Available"</p>
+                    </div>
+                </div>
+            </div>
+        }
+    }
+    else
+    {
+        <p>No courses available.</p>
+    }
+</div>
